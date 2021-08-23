@@ -94,7 +94,7 @@ module.exports = client = async (client, message) => {
         const isOwner = ownerNumber.includes(sender)
         const isOwnerGroup = isGroup ? groupMetadata.owner : ''
         const isGroupAdmins = isGroup ? getGroupAdmins(groupMembers) : ''
-        const isBotGroupAdmins = isGroup ? yui.getGroupAdmins(botNumber) : ''
+        const isBotGroupAdmins = isGroup ? getGroupAdmins(botNumber) : ''
 
         const isMedia = (type === 'imageMessage' || type === 'videoMessage')
     		const isQuotedImage = type === 'extendedTextMessage' && content.includes('imageMessage')
