@@ -11,7 +11,8 @@ const welcome = require('./message/group')
 
 const starts = async (client = new WAConnection()) => {
 	let authofile = './session.json'
-    client.version = [2, 2119, 6]
+    	client.version = [2, 2119, 6]
+	client.browserDescription = ["YUIGAHAMA - BOT", "Chrome", "1.0.0"]
 	client.logger.level = 'warn'
 	CFonts.say('Whatsapp BOT AUTOMATE', {
     font: '3d',
@@ -21,16 +22,16 @@ const starts = async (client = new WAConnection()) => {
 	console.log(color(figlet.textSync('NAGISA', 'Standard'), 'cyan'))
 	client.on('qr', qr => {
         qrcode.generate(qr, { small: true })
-        console.log(color('[NAGISA]', 'yellow'), color('Scan Qr'))
+        console.log(color('[ YUI ]', 'yellow'), color('Scan Qr'))
     })
 	fs.existsSync(authofile) && client.loadAuthInfo(authofile)
 	client.on('connecting', () => {
-		console.log(color('[NAGISA]', 'yellow'), color('Connecting...'))
+		console.log(color('[ YUI ]', 'yellow'), color('Connecting...'))
 	})
 	client.on('open', () => {
-		console.log(color('[NAGISA]', 'yellow'), color('Connect'))
+		console.log(color('[ YUI ]', 'yellow'), color('Connect'))
 	})
-	console.log(color('[NAGISA]', 'yellow'), color('Nagisa is now online!'))
+	console.log(color('[ YUI ]', 'yellow'), color('Nagisa is now online!'))
 	await client.connect({timeoutMs: 30*1000})
     fs.writeFileSync(authofile, JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
 
