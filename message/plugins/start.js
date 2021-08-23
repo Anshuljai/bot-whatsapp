@@ -15,7 +15,7 @@ const starts = async(client, from, message, compressImage, fs) => {
 	}
 	const { wa_version, mcc, mnc, os_version, device_manufacturer, device_model } = client.user.phone
 	buttons = [{buttonId:'MenuBot',buttonText:{displayText:'Menu'},type:1},{buttonId:'Donasi',buttonText:{displayText:'Donasi Bot'},type:1},{buttonId:'infoBot',buttonText:{displayText:'Info Bot'},type:1}]
-    let imageMessage = ( await client.prepareMessage(from, fs.readFileSync(`./media/natsunagi.jpeg`), 'imageMessage', { thumbnail: await compressImage(fs.readFileSync(`./media/natsunagi.jpeg`))})).message.imageMessage
+    let imageMessage = ( await client.prepareMessage(from, fs.readFileSync(`./media/yui.jpg`), 'imageMessage', { thumbnail: await compressImage(fs.readFileSync(`./media/yui.jpg`))})).message.imageMessage
     buttonsMessage = {footerText:'Made With ❤️☕ by Arya', imageMessage,
     contentText:`❏─── *「 Yuigahama BOT 」* ───❏
 
