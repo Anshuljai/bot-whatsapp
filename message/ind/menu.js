@@ -15,7 +15,8 @@ exports.menuDownloader = (prefix) => {
 └────────────────────
 
 
-Made With ❤️ by Arya`
+Made With ❤️ by Arya
+source: github.com/Arya-was/bot-whatsapp`
 }
 exports.menuGame = (prefix) => {
 	return`❏─── *「 Game Menu 」* ───❏
@@ -28,7 +29,8 @@ exports.menuGame = (prefix) => {
 └─────────────────────
 
 
-Made With ❤️ by Arya`
+Made With ❤️ by Arya
+source: github.com/Arya-was/bot-whatsapp`
 }
 exports.menuConvert = (prefix) => {
 	return `❏─── *「 Convert Menu 」* ───❏
@@ -45,5 +47,6 @@ exports.menuConvert = (prefix) => {
 └─────────────────────
 
 
-Made With ❤️ by Arya`
+Made With ❤️ by Arya
+source: github.com/Arya-was/bot-whatsapp`
 }
