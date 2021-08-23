@@ -19,7 +19,7 @@ const starts = async (client = new WAConnection()) => {
     align: 'center',
     gradient: ['red', 'magenta']
 	})
-	console.log(color(figlet.textSync('NAGISA', 'Standard'), 'cyan'))
+	console.log(color(figlet.textSync('YUI', 'Standard'), 'cyan'))
 	client.on('qr', qr => {
         qrcode.generate(qr, { small: true })
         console.log(color('[ YUI ]', 'yellow'), color('Scan Qr'))
